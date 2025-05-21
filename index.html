@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Balanced Diet Restaurant</title>
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Balanced Diet Restaurant</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#popular-dishes">Menu</a>
+      <a href="#sub">Subscription</a>
+      <a href="#reserve">Reservation</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <h1>Welcome to Balanced Diet Restaurant</h1>
+    <p>Pay monthly, eat daily. Enjoy convenience like never before.</p>
+    <a href="#sub" class="btn">Subscribe Now</a>
+  </section>
+
+  <!-- Menu Section -->
+<section id="popular-dishes">
+  <h2>Popular Dishes</h2>
+  <div class="dishes-container">
+    <div class="dish-card">
+      <img src="images/beans.jpeg" alt="Rice and Beans">
+      <div class="dish-info">
+        <h3>Rice & Beans</h3>
+        <p>A tasty blend of rice and beans with Rwandan spices.</p>
+        <span class="price">Rwf 2,000</span>
+      </div>
+    </div>
+
+    <div class="dish-card">
+      <img src="images/chips.jpeg" alt="Chips and Meat">
+      <div class="dish-info">
+        <h3>Chips & Meat</h3>
+        <p>Crispy chips served with juicy grilled meat.</p>
+        <span class="price">Rwf 5,000</span>
+      </div>
+    </div>
+
+    <div class="dish-card">
+      <img src="images/pillaw.jpeg" alt="Pillaw">
+      <div class="dish-info">
+        <h3>Pillaw</h3>
+        <p>Spiced rice cooked with beef and vegetables.</p>
+        <span class="price">Rwf 3,000</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Subscription Section -->
+  <section id="sub" class="section">
+    <h2>Monthly Subscription</h2>
+    <p>Pay once a month and eat daily. Enjoy discounts like never before!</p>
+
+    <div class="subscription-plans">
+      <!-- VIP Plan -->
+      <div class="plan-card">
+        <h3>VIP Plan – 2,000 RWF/month</h3>
+        <ul>
+          <li> Pilau</li>
+          <li> Chips</li>
+          <li> Sparta</li>
+          <li> Daily Lunch Access</li>
+        </ul>
+        <button class="btn">Subscribe to VIP</button>
+      </div>
+
+      <!-- VVIP Plan -->
+      <div class="plan-card">
+        <h3>VVIP Plan – 5,000 RWF/month</h3>
+        <ul>
+          <li>All VIP Meals</li>
+          <li> Extra Soft Drink after Lunch</li>
+          <li> Weekly Dessert</li>
+          <li> Special Offers</li>
+        </ul>
+        <button class="btn">Subscribe to VVIP</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation Section -->
+  <section id="reserve" class="section">
+    <h2>Book a Table</h2>
+    <p>Reserve your table in advance and skip the wait.</p>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="date" required />
+      <input type="time" required />
+      <button class="btn" type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Balanced Diet Restaurant | Website by Evariste</p>
+  </footer>
+</body>
+</html>
