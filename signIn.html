@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Balanced – Login</title>
+  <link rel="stylesheet" href="style/style.css" />  
+  <link rel="stylesheet" href="style/sign.css">
+</head>
+<body>
+    <header class="navbar">
+    <div class="logo">Balanced Diet Restaurant</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html">Menu</a>
+      <a href="index.html">Subscription</a>
+      <a href="index.html">Reservation</a>
+      <a href="signIn.html">Sign In</a>
+    </nav>
+  </header>
+  <div class="login-container">
+    <h2>Sign In</h2>
+    <div class="role-buttons">
+      <button class="role-btn" onclick="showForm('admin')">I'm Admin</button>
+      <button class="role-btn" onclick="showForm('customer')">I'm Customer</button>
+    </div>
+
+    <!-- Admin Form -->
+    <form id="adminForm" class="login-form" action="admin_dashboard.html" method="POST">
+       <label for="adminName">Admin name </label>
+       <input type="text" id="adname" name="adminName" required>
+      <label for="adminEmail">Admin Email:</label>
+      <input type="email" id="adminEmail" name="adminEmail" required />
+
+      <label for="adminPassword">Password:</label>
+      <input type="password" id="adminPassword" name="adminPassword" required />
+
+      <button type="submit" class="btn">Login as Admin</button>
+
+      <div class="services">
+        <p>✔ Manage menu</p>
+        <p>✔ View customer reservations</p>
+        <p>✔ Add offers and update subscriptions</p>
+      </div>
+    </form>
+
+    <!-- Customer Form -->
+    <form id="customerForm" class="login-form" action="customer_dashboard.html" method="POST">
+      <label for="customerName">Customer name</label>
+      <input type="text" id="customerName" name="customer name" required>
+
+      <label for="customerEmail">Customer Email:</label>
+      <input type="email" id="customerEmail" name="customerEmail" required />
+
+      <label for="customerPassword">Password:</label>
+      <input type="password" id="customerPassword" name="customerPassword" required />
+
+      <button type="submit" class="btn">Login as Customer</button>
+
+      <div class="services">
+        <p>✔ Book tables online</p>
+        <p>✔ Subscribe to monthly meal plans</p>
+        <p>✔ Order food for home delivery</p>
+      </div>
+    </form>
+  </div>
+  <script src="java/main.js"></script>
+</body>
+</html>
+
